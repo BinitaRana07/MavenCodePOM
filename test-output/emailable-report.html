@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Testin on chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">23,151</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Testing on firefox</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,220</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Testing on safari</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">10,367</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">46,738</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testin on chrome &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">projectMaven.ProjectMaven.Amazon_Login_Page</td><td><a href="#m0">withvalidCredentails</a></td><td rowspan="1">1760653129063</td><td rowspan="1">5900</td></tr><tr><th colspan="4">Testin on chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">projectMaven.ProjectMaven.Amazon_Login_Page</td><td><a href="#m1">withvalidCredentails</a></td><td rowspan="1">1760653139666</td><td rowspan="1">7491</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Testing on firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">projectMaven.ProjectMaven.Amazon_Login_Page</td><td><a href="#m2">withvalidCredentails</a></td><td rowspan="1">1760653153022</td><td rowspan="1">7493</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Testing on safari &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">projectMaven.ProjectMaven.Amazon_Login_Page</td><td><a href="#m3">launch</a></td><td rowspan="1">1760653160822</td><td rowspan="1">10354</td></tr><tr><th colspan="4">Testing on safari &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">projectMaven.ProjectMaven.Amazon_Login_Page</td><td><a href="#m4">quit</a></td><td rowspan="1">1760653171185</td><td rowspan="1">0</td></tr><tr><th colspan="4">Testing on safari &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">projectMaven.ProjectMaven.Amazon_Login_Page</td><td><a href="#m5">withvalidCredentails</a></td><td rowspan="1">1760653171181</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Testin on chrome</h2><h3 id="m0">projectMaven.ProjectMaven.Amazon_Login_Page#withvalidCredentails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.107)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [574f8aa7559652fd7baf982c693b7a4f, sendKeysToElement {id=f.BAB3EE64D8DA0FC794CBFE4E5AD609B2.d.8311C1786F053BC37F9646FDDA62900E.e.82, value=[Ljava.lang.CharSequence;@36b0fcd5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: /var/folders/8b/q0_qf8717zs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65143}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65143/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (574f8aa7559652fd7baf982c693b7a4f)] -&gt; name: password]
+Session ID: 574f8aa7559652fd7baf982c693b7a4f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+	at projectMaven.ProjectMaven.Amazon_Login.validPassword(Amazon_Login.java:38)
+	at projectMaven.ProjectMaven.Amazon_Login_Page.withvalidCredentails(Amazon_Login_Page.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">projectMaven.ProjectMaven.Amazon_Login_Page#withvalidCredentails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login successfully<br/>Listener Logic is started<br/>Screenshot taken successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Testing on firefox</h2><h3 id="m2">projectMaven.ProjectMaven.Amazon_Login_Page#withvalidCredentails</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login successfully<br/>Listener Logic is started<br/>Screenshot taken successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Testing on safari</h2><h3 id="m3">projectMaven.ProjectMaven.Amazon_Login_Page#launch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>safari</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Selected safari Browser</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable &apos;Allow remote automation&apos; in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: &apos;Mac.cust.communityfibre.co.uk&apos;, ip: &apos;2a02:6b6f:e1a0:a600:ece8:2d7e:9012:ab4e%en0&apos;
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at utility.Amazon_BaseClass.launch(Amazon_BaseClass.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">projectMaven.ProjectMaven.Amazon_Login_Page#quit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">projectMaven.ProjectMaven.Amazon_Login_Page#withvalidCredentails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable &apos;Allow remote automation&apos; in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: &apos;Mac.cust.communityfibre.co.uk&apos;, ip: &apos;2a02:6b6f:e1a0:a600:ece8:2d7e:9012:ab4e%en0&apos;
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at utility.Amazon_BaseClass.launch(Amazon_BaseClass.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
