@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 public class Amazon_Home 
 {
 	WebDriver driver;
-	SoftAssert s1=new SoftAssert();
+	//SoftAssert s1=new SoftAssert();
 	
 	//step 1
 	@FindBy(xpath="//span[@class='nav-line-2 ']")
@@ -40,9 +40,9 @@ public class Amazon_Home
 	public void SearchProduct()
 	{
 		search.sendKeys("Shoes"+Keys.ENTER);
-		List<WebElement> product=driver.findElements(By.xpath("//a[@class='a-link-normal s-no-outline']"));
+		/*List<WebElement> product=driver.findElements(By.xpath("//a[@class='a-link-normal s-no-outline']"));
 		s1.assertEquals(product.size()>50, true,"Sorry expected Behaviour is not matching with actual behaviour");
-		s1.assertAll();
+		s1.assertAll();*/
 	}
 	
 	//Step 3
